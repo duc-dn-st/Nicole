@@ -1,0 +1,4 @@
+[ 25%] [32m[1mLinking CXX shared library /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/libslope_libs.so[0m
+[ 50%] Built target slope_libs
+[ 75%] [32m[1mLinking CXX executable /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/perception/front_obstacle_detection_node[0m
+[100%] Built target front_obstacle_detection_node

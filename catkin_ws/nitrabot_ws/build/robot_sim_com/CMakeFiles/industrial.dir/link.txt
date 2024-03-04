@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libindustrial.so -o /home/musashi/catkin_ws/nitrabot_ws/devel/lib/libindustrial.so CMakeFiles/industrial.dir/src/robotdata.cpp.o CMakeFiles/industrial.dir/src/parkingcontroller_switchingapproach.cpp.o 

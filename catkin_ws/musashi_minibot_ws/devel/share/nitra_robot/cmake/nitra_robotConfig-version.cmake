@@ -1,0 +1,1 @@
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robotConfig-version.cmake

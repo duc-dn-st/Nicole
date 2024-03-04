@@ -1,0 +1,5 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/libslope_libs.so
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/perception.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/perception/slope_bump_detection_node
+Symlinking /home/musashi/MPC_test_ws/devel/share/perception/cmake/perceptionConfig-version.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/perception/cmake/perceptionConfig.cmake

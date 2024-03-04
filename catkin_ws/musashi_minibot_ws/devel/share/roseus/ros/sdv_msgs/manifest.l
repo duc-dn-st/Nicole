@@ -1,0 +1,1 @@
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/sdv_msgs/share/roseus/ros/sdv_msgs/manifest.l

@@ -1,0 +1,18 @@
+<launch>
+  <node pkg="drivers" type="absolute_encoder_driver.py" name="fl_steering" required="true">
+      <param name="/port" value="/dev/ttyUSB0" />
+  </node>
+<!-- 
+  <node pkg="drivers" type="absolute_encoder_driver.py" name="fr_steering" required="true">
+      <param name="/port" value="/dev/ttyACM1" />
+  </node>
+  
+  <node pkg="drivers" type="absolute_encoder_driver.py" name="bl_steering" required="true">
+      <param name="/port" value="/dev/ttyACM2" />
+  </node>
+  
+  <node pkg="drivers" type="absolute_encoder_driver.py" name="br_steering" required="true">
+      <param name="/port" value="/dev/ttyACM3" />
+  </node> -->
+
+</launch>

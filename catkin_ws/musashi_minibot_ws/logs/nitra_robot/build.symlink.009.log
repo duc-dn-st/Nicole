@@ -1,0 +1,49 @@
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/nitra_robot.pc
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/nitra_robot/__init__.py
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_finder_node.py
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_recorder_node.py
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/cmake.lock
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/laserscan2pointcloud
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/controller_node
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig-version.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/nitra_robot/manifest.l
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/pkgconfig/nitra_robot.pc, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/nitra_robot.pc)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/python3/dist-packages/nitra_robot/__init__.py, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/nitra_robot/__init__.py)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/path_finder_node.py, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_finder_node.py)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/path_recorder_node.py, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_recorder_node.py)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/laserscan2pointcloud, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/laserscan2pointcloud)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/controller_node, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/controller_node)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robotConfig.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robotConfig-version.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig-version.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/roseus/ros/nitra_robot/manifest.l, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/nitra_robot/manifest.l)
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/nitra_robot.pc
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/nitra_robot/__init__.py
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_finder_node.py
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_recorder_node.py
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/cmake.lock
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/laserscan2pointcloud
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/controller_node
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/nitra_robot/manifest.l
+Already unlinked: {}

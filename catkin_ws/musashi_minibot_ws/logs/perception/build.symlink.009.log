@@ -1,0 +1,21 @@
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/libslope_libs.so
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/perception.pc
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/perception/front_obstacle_detection_node
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig-version.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig.cmake
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/libslope_libs.so, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/libslope_libs.so)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/pkgconfig/perception.pc, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/perception.pc)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/perception/front_obstacle_detection_node, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/perception/front_obstacle_detection_node)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/share/perception/cmake/perceptionConfig-version.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig-version.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/share/perception/cmake/perceptionConfig.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig.cmake)
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/libslope_libs.so
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/perception.pc
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/perception/front_obstacle_detection_node
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/perception/cmake/perceptionConfig.cmake
+Already unlinked: {}

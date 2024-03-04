@@ -1,0 +1,6 @@
+gazebo_ros_control:
+  pid_gains:
+    base_link_to_back_left_wheel_shaft: {p: 100.0, i: 0.01, d: 10.0}
+    base_link_to_back_right_wheel_shaft: {p: 100.0, i: 0.01, d: 10.0}
+    base_link_to_front_left_wheel_shaft: {p: 100.0, i: 0.01, d: 10.0}
+    base_link_to_front_right_wheel_shaft: {p: 100.0, i: 0.01, d: 10.0}

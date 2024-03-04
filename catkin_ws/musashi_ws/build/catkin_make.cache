@@ -1,0 +1,2 @@
+collision_avoidance:control:drivers:localization:mapping:perception:robot_sim_exp:sdv_msgs:trajectory_generation:utilities
+-DCATKIN_DEVEL_PREFIX=/home/musashi/catkin_ws/musashi_ws/devel -DCMAKE_INSTALL_PREFIX=/home/musashi/catkin_ws/musashi_ws/install -G Unix Makefiles

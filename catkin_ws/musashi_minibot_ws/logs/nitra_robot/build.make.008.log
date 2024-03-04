@@ -1,0 +1,15 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target nitra_robot_xacro_generated_to_devel_space_
+[ 28%] Built target control
+[ 57%] Built target laserscan2pointcloud
+[ 57%] Built target nitra_robot_generate_messages_nodejs
+[ 57%] Built target nitra_robot_generate_messages_lisp
+[ 57%] Built target nitra_robot_generate_messages_cpp
+[ 57%] Built target nitra_robot_generate_messages_py
+[ 71%] Built target nitra_robot_generate_messages_eus
+[100%] Built target controller_node
+[100%] Built target nitra_robot_generate_messages

@@ -1,0 +1,4 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/localization.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/localization/kinematics
+Symlinking /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig-version.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig.cmake

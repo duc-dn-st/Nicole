@@ -1,0 +1,19 @@
+[01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/mpc_ackerman.cpp:[m[K In member function ‘[01m[Kvoid MpcAckerman::calculate_opt_control(const std::vector<Eigen::Matrix<double, 3, 1> >&, const std::vector<Eigen::Matrix<double, 2, 1> >&)[m[K’:
+[01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/mpc_ackerman.cpp:203:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid OsqpEigen::Settings::setMaxIteraction(int)[m[K’ is deprecated: Use setMaxIteration(int) instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  203 |     solver.settings()->setMaxIteraction(10000[01;35m[K)[m[K;
+      |                                              [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/OsqpEigen/OsqpEigen.h:12[m[K,
+                 from [01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/../include/control/mpc_ackerman.h:26[m[K,
+                 from [01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/mpc_ackerman.cpp:1[m[K:
+[01m[K/usr/local/include/OsqpEigen/Settings.hpp:92:66:[m[K [01;36m[Knote: [m[Kdeclared here
+   92 |         [[deprecated("Use setMaxIteration(int) instead.")]] void [01;36m[KsetMaxIteraction[m[K(const int maxIteration);
+      |                                                                  [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/mpc_ackerman.cpp:216:23:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool OsqpEigen::Solver::solve()[m[K’ is deprecated: Use solveProblem() instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+  216 |     if (!solver.solve([01;35m[K)[m[K) std::cout << "Problem solving qp" << std::endl;
+      |                       [01;35m[K^[m[K
+In file included from [01m[K/usr/local/include/OsqpEigen/OsqpEigen.h:13[m[K,
+                 from [01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/../include/control/mpc_ackerman.h:26[m[K,
+                 from [01m[K/home/musashi/Work/Nicole/MPC_test_ws/src/control/src/mpc_ackerman.cpp:1[m[K:
+[01m[K/usr/local/include/OsqpEigen/Solver.hpp:120:14:[m[K [01;36m[Knote: [m[Kdeclared here
+  120 |         bool [01;36m[Ksolve[m[K();
+      |              [01;36m[K^~~~~[m[K

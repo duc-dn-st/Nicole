@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="test_env2">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://test_env2</uri>
+      <name>test_environment2</name>
+      <pose>8.0 -8.0 0 0 0 -1.5707</pose>
+    </include>
+  </world>
+</sdf>

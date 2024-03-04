@@ -1,0 +1,53 @@
+[35m[1mScanning dependencies of target drivers[0m
+[35m[1mScanning dependencies of target run_rt_usb_9axisimu_driver[0m
+[35m[1mScanning dependencies of target motor_libs[0m
+[  4%] [32mBuilding CXX object CMakeFiles/drivers.dir/src/encoder_driver.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/drivers.dir/src/encoder_to_velocity.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/run_rt_usb_9axisimu_driver.dir/src/rt_usb_9axisimu_driver.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/drivers.dir/src/motor_driver.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/drivers.dir/src/driving_motor_driver.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/drivers.dir/src/steering_motor_driver.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/motor_libs.dir/src/motor_driver.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/motor_libs.dir/src/encoder_driver.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/motor_libs.dir/src/encoder_to_velocity.cpp.o[0m
+In file included from [01m[K/home/musashi/MPC_test_ws/src/drivers/src/rt_usb_9axisimu_driver.cpp:32[m[K:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/include/drivers/rt_usb_9axisimu.hpp:[m[K In member function ‘[01m[Kint RtUsbImu::SerialPort::readAscii(std::vector<double>&, unsigned int)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/include/drivers/rt_usb_9axisimu.hpp:288:7:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  288 |       [01;35m[K}[m[K
+      |       [01;35m[K^[m[K
+[ 41%] [32mBuilding CXX object CMakeFiles/motor_libs.dir/src/driving_motor_driver.cpp.o[0m
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::sendMotorCommands(double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\:'
+  147 |     std::cout << [01;35m[K"Driving directions\:\t ["[m[K<<data[1] << ", "<<data[3] << ", "<<data[5] << ", "<<data[7] << "]" <<std::endl;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::sendMotorCommands(double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\:'
+  147 |     std::cout << [01;35m[K"Driving directions\:\t ["[m[K<<data[1] << ", "<<data[3] << ", "<<data[5] << ", "<<data[7] << "]" <<std::endl;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[ 45%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/run_rt_usb_9axisimu_driver[0m
+[ 45%] Built target run_rt_usb_9axisimu_driver
+[ 50%] [32mBuilding CXX object CMakeFiles/motor_libs.dir/src/steering_motor_driver.cpp.o[0m
+[ 54%] [32m[1mLinking CXX shared library /home/musashi/MPC_test_ws/devel/.private/drivers/lib/libdrivers.so[0m
+[ 54%] Built target drivers
+[ 58%] [32m[1mLinking CXX shared library /home/musashi/MPC_test_ws/devel/.private/drivers/lib/libmotor_libs.so[0m
+[ 58%] Built target motor_libs
+[35m[1mScanning dependencies of target keyboard_cmd[0m
+[35m[1mScanning dependencies of target test_encoder[0m
+[35m[1mScanning dependencies of target test_steering_motor[0m
+[35m[1mScanning dependencies of target encoder_to_velocity[0m
+[35m[1mScanning dependencies of target test_driving_motor[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/test_driving_motor.dir/src/test/test_driving_motor.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_steering_motor.dir/src/test/test_steering_motor.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/keyboard_cmd.dir/src/keyboard_cmd.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/encoder_to_velocity.dir/src/encoder_to_velocity.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/test_encoder.dir/src/test/test_encoder_driver.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/test_encoder[0m
+[ 83%] Built target test_encoder
+[ 87%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/keyboard_cmd[0m
+[ 87%] Built target keyboard_cmd
+[ 91%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/test_driving_motor[0m
+[ 95%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/test_steering_motor[0m
+[ 95%] Built target test_driving_motor
+[ 95%] Built target test_steering_motor
+[100%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/drivers/lib/drivers/encoder_to_velocity[0m
+[100%] Built target encoder_to_velocity

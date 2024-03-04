@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='obstacle_block'>
+  <pose>12 -2 0  0 0 -1.5708</pose>
+  <static>true</static>
+  <link name="body_obstacle_block">
+  <collision name="collision_obstacle_block">
+    <geometry>
+      <mesh><uri>model://Collada_Files/obstacle_block.dae</uri></mesh>
+    </geometry>
+    <surface>
+      <friction>
+        <ode>
+          <mu>100</mu>
+          <mu2>50</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+    <visual name="visual_obstacle_block">
+      <geometry>
+        <mesh><uri>model://Collada_Files/obstacle_block.dae</uri></mesh>
+      </geometry>
+    </visual>
+  </link>
+  </model>
+</sdf>

@@ -1,0 +1,2 @@
+pose_x [m], pose_y [m], pose_theta [rad], v [m/s], delta [rad], x_e, y_e, theta_e, x_ref, y_ref, theta_ref
+6.92041e-310, 4.94066e-324, 1.39065e-309, 0.004, -2.20994e-311

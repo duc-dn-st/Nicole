@@ -1,0 +1,17 @@
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/logger.pc
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/logger/logger
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig-version.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig.cmake
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/lib/pkgconfig/logger.pc, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/logger.pc)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/lib/logger/logger, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/logger/logger)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/share/logger/cmake/loggerConfig-version.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig-version.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/share/logger/cmake/loggerConfig.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig.cmake)
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/logger.pc
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/logger/logger
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/logger/cmake/loggerConfig.cmake
+Already unlinked: {}

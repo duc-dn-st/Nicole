@@ -1,0 +1,7 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/slope_libs.dir/src/slope_bump_detection.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/musashi/MPC_test_ws/devel/.private/perception/lib/libslope_libs.so[0m
+[ 50%] Built target slope_libs
+[35m[1mScanning dependencies of target slope_bump_detection_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/slope_bump_detection_node.dir/src/slope_bump_detection_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/perception/lib/perception/slope_bump_detection_node[0m
+[100%] Built target slope_bump_detection_node

@@ -1,0 +1,21 @@
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/libutilities.so
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/pkgconfig/utilities.pc
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/utilities/simple_logger
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig-version.cmake
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig.cmake
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/cmake.lock, /home/musashi/MPC_test_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/lib/libutilities.so, /home/musashi/MPC_test_ws/devel/lib/libutilities.so)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/lib/pkgconfig/utilities.pc, /home/musashi/MPC_test_ws/devel/lib/pkgconfig/utilities.pc)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/lib/utilities/simple_logger, /home/musashi/MPC_test_ws/devel/lib/utilities/simple_logger)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/share/utilities/cmake/utilitiesConfig-version.cmake, /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig-version.cmake)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/utilities/share/utilities/cmake/utilitiesConfig.cmake, /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig.cmake)
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/libutilities.so
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/pkgconfig/utilities.pc
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/utilities/simple_logger
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig.cmake
+Already unlinked: {}

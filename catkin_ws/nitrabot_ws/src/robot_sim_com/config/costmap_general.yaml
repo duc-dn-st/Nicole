@@ -1,0 +1,25 @@
+robot_base_frame: /base_link
+transform_tolerance: 0.2
+footprint: [[-0.2, -0.37], [-0.2, 0.37], [1.05, 0.37], [1.05, -0.37]]
+
+# layer definitions
+static:
+  unknown_cost_value: -1
+  lethal_cost_threshold: 100
+  map_topic: /map
+  subscribe_to_updates: true
+
+inflation:
+  inflation_radius: 0.62
+  cost_scaling_factor: 10.0
+
+obstacles:
+  max_obstacle_height: 2
+  observation_sources: /lidar/scan
+  /lidar/scan: {data_type: LaserScan, sensor_frame: /lidar, clearing: true, marking: true, topic: /lidar/scan, obstacle_range: 8, raytrace_range: 8, expected_update_rate: 0.15}
+
+sonar:
+  frame: US_FR_R_L US_FR_R_C US_FR_R_R US_FL_L_L US_FL_L_C US_FL_L_R US_FL_F_A US_FL_F_L US_FL_F_R US_FR_F_L US_FR_F_R US_FR_F_A
+  topics: ['/US_FR_R_L/sonar', 'US_FR_R_C/sonar', '/US_FR_R_R/sonar', '/US_FL_L_L/sonar', '/US_FL_L_C/sonar', '/US_FL_L_R/sonar',
+  '/US_FL_F_A/sonar', '/US_FL_F_L/sonar', '/US_FL_F_R/sonar', '/US_FR_F_L/sonar', '/US_FR_F_R/sonar', '/US_FR_F_A/sonar']
+  clear_on_max_reading: true

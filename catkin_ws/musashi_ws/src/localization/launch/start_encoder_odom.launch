@@ -1,0 +1,7 @@
+<launch>
+
+    <node name="encoder_to_velocity" pkg="drivers" type="encoder_to_velocity" output="screen" />
+
+    <!-- run encoder localization -->
+    <node name="kinematics" pkg="localization" type="kinematics" output="screen"/>-->
+</launch>

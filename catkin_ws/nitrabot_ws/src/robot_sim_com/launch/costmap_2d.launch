@@ -1,0 +1,6 @@
+<launch>
+  <!-- Run the costmap node -->
+  <node name="costmap_node" pkg="costmap_2d" type="costmap_2d_node" >
+    <rosparam file="$(find industrial_robot_qt)/config/costmap2D.yaml" command="load" ns="costmap" />
+  </node>
+</launch>

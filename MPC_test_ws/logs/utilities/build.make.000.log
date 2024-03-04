@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target utilities[0m
+[35m[1mScanning dependencies of target simple_logger[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/utilities.dir/src/utilities.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_logger.dir/src/simple_logger.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library /home/musashi/MPC_test_ws/devel/.private/utilities/lib/libutilities.so[0m
+[ 75%] Built target utilities
+[100%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/utilities/lib/utilities/simple_logger[0m
+[100%] Built target simple_logger

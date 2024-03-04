@@ -1,0 +1,6 @@
+devel_space: /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel
+install: false
+install_space: /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/install
+profile: default
+source_space: /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/src
+workspace: /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws

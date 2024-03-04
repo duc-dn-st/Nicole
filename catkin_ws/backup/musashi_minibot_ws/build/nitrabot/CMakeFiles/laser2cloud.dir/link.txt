@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/laser2cloud.dir/src/laserscan2pointcloud.cpp.o  -o /home/musashi/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/laser2cloud 

@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<robot name="musashi_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:arg name="gpu" default="false"/>
+  <xacro:property name="gpu" value="$(arg gpu)" />
+	
+  <!-- Import all robot parts which were xacroed -->
+  <xacro:include filename="$(find robot_sim_exp)/urdf/musashi_robot.xacro" />
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find robot_sim_exp)/urdf/colors.xacro" />
+  <!-- Import robot properties -->
+  <xacro:include filename="$(find robot_sim_exp)/urdf/properties.xacro" />
+  <!-- Import sensor and actuator properties -->
+  <xacro:include filename="$(find robot_sim_exp)/urdf/sensors_and_actuators.xacro" />
+
+  <!--<link name="world"/>-->
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="Red"/>
+    </visual>
+  </link>
+  <gazebo reference="base_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <link name="rear_axis_center">
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01"/>
+      </geometry>
+      <material name="Red"/>
+    </visual>
+  </link>
+  <gazebo reference="rear_axis_center">
+    <material>Gazebo/Red</material>
+  </gazebo>
+  <joint name="base_link_to_rear_axis_center" type="fixed">
+    <parent link="base_link" />
+    <child link="rear_axis_center" />
+    <origin xyz="-0.40 0.0 0.0" />
+  </joint>
+
+  <link name="robot_frame">
+    <visual>
+      <geometry>
+        <mesh filename="package://robot_sim_exp/urdf/meshes/Collada/robot_chassis_body.dae" /> <!--scale="0.001 0.001 0.001"/>-->
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.180 0.840 ${robot_height}"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <!--
+      <geometry>
+        <mesh filename="package://robot_sim_exp/urdf/meshes/Collada/robot_chassis_body.dae" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      -->
+    </collision>
+    <xacro:inertial_box mass="${robot_mass}" x="${robot_length}" y="${robot_width}" z="${robot_height}" />
+  </link>
+  <joint name="base_link_to_robot_frame" type="fixed">
+    <parent link="base_link" />
+    <child link="robot_frame" />
+    <origin xyz="0.0 0.0 0.0" />
+  </joint>
+
+<!-- ///////////////////////////////////////// STEERING //////////////////////////////////// -->
+
+  <xacro:steering name="back_left_wheel_shaft" parent="base_link" mass="${mass_steering_unit}"
+    sizex="${x_steering_unit}" sizey="${y_steering_unit}" sizez="${z_steering_unit}" ox="-0.40" oy="0.29" oz="0.0"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/back_left_wheel_shaft.dae" />
+
+  <xacro:steering name="back_right_wheel_shaft" parent="base_link" mass="${mass_steering_unit}"
+    sizex="${x_steering_unit}" sizey="${y_steering_unit}" sizez="${z_steering_unit}" ox="-0.40" oy="-0.29" oz="0.0"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/back_right_wheel_shaft.dae" />
+
+  <xacro:steering name="front_left_wheel_shaft" parent="base_link" mass="${mass_steering_unit}"
+    sizex="${x_steering_unit}" sizey="${y_steering_unit}" sizez="${z_steering_unit}" ox="0.40" oy="0.29" oz="0.0"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/front_left_wheel_shaft.dae" />
+
+  <xacro:steering name="front_right_wheel_shaft" parent="base_link" mass="${mass_steering_unit}"
+    sizex="${x_steering_unit}" sizey="${y_steering_unit}" sizez="${z_steering_unit}" ox="0.40" oy="-0.29" oz="0.0"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/front_right_wheel_shaft.dae" />
+
+<!-- ///////////////////////////////////////// WHEELS //////////////////////////////////// -->
+
+  <xacro:wheels name="back_left_wheel" parent="back_left_wheel_shaft" mass="${mass_wheel}"
+    length="${thickness}" radius="${radius}" ox="-0.40" oy="0.29" oz="-0.2265" mu1="200" mu2="100" kp="10000000" kd="40"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/back_left_wheel.dae" />
+
+  <xacro:wheels name="back_right_wheel" parent="back_right_wheel_shaft" mass="${mass_wheel}"
+    length="${thickness}" radius="${radius}" ox="-0.40" oy="-0.29" oz="-0.2265" mu1="200" mu2="100" kp="10000000" kd="40"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/back_right_wheel.dae" />
+
+  <xacro:wheels name="front_left_wheel" parent="front_left_wheel_shaft" mass="${mass_wheel}"
+    length="${thickness}" radius="${radius}" ox="0.40" oy="0.29" oz="-0.2265" mu1="200" mu2="100" kp="10000000" kd="40"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/front_left_wheel.dae" />
+
+  <xacro:wheels name="front_right_wheel" parent="front_right_wheel_shaft" mass="${mass_wheel}"
+    length="${thickness}" radius="${radius}" ox="0.40" oy="-0.29" oz="-0.2265" mu1="200" mu2="100" kp="10000000" kd="40"
+    filename="package://robot_sim_exp/urdf/meshes/Collada/front_right_wheel.dae" />
+
+<!-- ///////////////////////////////////////// VELODYNE //////////////////////////////////// -->
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+    <VLP-16 parent="base_link" name="velodyne_front" topic="/velodyne_points_front" hz="10" samples="440" gpu="${gpu}">
+      <origin xyz="0.590 0.420 -0.247" rpy="0 0 ${60*pi/180}" />
+    </VLP-16>
+
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+    <VLP-16 parent="base_link" name="velodyne_back" topic="/velodyne_points_back" hz="10" samples="440" gpu="${gpu}">
+      <origin xyz="-0.590 -0.420 -0.247" rpy="0 0 ${239.5*pi/180}" />
+    </VLP-16>
+
+<!-- FOR TESTINGG THE VELODYNE SENSOR
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+    <VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440" gpu="${gpu}">
+      <origin xyz="0.590 0.420 -0.247" rpy="0 0 0" />
+    </VLP-16>
+-->
+<!-- ///////////////////////////////////////// IMU //////////////////////////////////// -->
+  <xacro:imu_sensor parent="base_link" imu_name="imu_sensor" mass="${imu_mass}" sizex="0.043" sizey="0.09" sizez="0.005" ox="0.099" oy="0.0" oz="0.0" update_rate="${imu_update_rate}" update_rateHz="${imu_update_rateHz}" noise="${imu_noise}" />
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/musashi_robot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>false</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+</robot>

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target kinematics[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/kinematics.dir/src/kinematic.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/musashi/Work/Nicole/MPC_test_ws/devel/.private/localization/lib/localization/kinematics[0m
+[100%] Built target kinematics

@@ -1,0 +1,4 @@
+Linked: (/home/musashi/MPC_test_ws/devel/.private/localization/lib/pkgconfig/localization.pc, /home/musashi/MPC_test_ws/devel/lib/pkgconfig/localization.pc)
+Linked: (/home/musashi/MPC_test_ws/devel/.private/localization/lib/localization/kinematics, /home/musashi/MPC_test_ws/devel/lib/localization/kinematics)
+Linked: (/home/musashi/MPC_test_ws/devel/.private/localization/share/localization/cmake/localizationConfig-version.cmake, /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig-version.cmake)
+Linked: (/home/musashi/MPC_test_ws/devel/.private/localization/share/localization/cmake/localizationConfig.cmake, /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig.cmake)

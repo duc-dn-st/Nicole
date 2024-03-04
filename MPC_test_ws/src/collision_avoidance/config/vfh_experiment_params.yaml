@@ -1,0 +1,12 @@
+# parameter for the VFH algorithm in the experiment
+
+# consecutive sectors that fall into threshold so that area is considered valley
+vfh_s_max: 30
+# sector angle
+vfh_alpha: 2
+# map distance
+vfh_max_distance: 5.0
+# value for magnitude calculation
+vfh_a: 10.0
+# threshold for sectors to be safe
+vfh_threshold: 0.01

@@ -1,0 +1,14 @@
+nitrabot
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/cmake.lock /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/pkgconfig/nitra_robot.pc /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/nitra_robot.pc
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/python3/dist-packages/nitra_robot/__init__.py /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/nitra_robot/__init__.py
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/path_finder_node.py /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_finder_node.py
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/path_recorder_node.py /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/path_recorder_node.py
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/cmake.lock /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/cmake.lock
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/laserscan2pointcloud /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/laserscan2pointcloud
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/lib/nitra_robot/controller_node /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/nitra_robot/controller_node
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robotConfig.cmake /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig.cmake
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-extras.cmake
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robot-msg-paths.cmake
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/nitra_robot/cmake/nitra_robotConfig-version.cmake /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/nitra_robot/cmake/nitra_robotConfig-version.cmake
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/roseus/ros/nitra_robot/manifest.l /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/nitra_robot/manifest.l

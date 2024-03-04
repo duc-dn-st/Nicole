@@ -1,0 +1,78 @@
+<launch>
+
+    <arg name="lidar" default="false" />
+    <arg name="imu" default="false" />
+    <arg name="robot" default="false" />
+    <arg name="slam" default="false" />
+    <arg name="amcl" default="false" />
+    <arg name="sonic" default="false" />
+    <arg name="imu_port" default="/dev/ttyACM0" />
+    <arg name="lidar_port" default="/dev/ttyUSB0" />
+    <arg name="robot_port" default="/dev/ttyUSB0" />
+    <arg name="lidar_frame_id" default="lidar" />
+    <arg name="sim" default="true" />
+<!--    <arg name="sonic_port" default="/dev/ttyACM0" /> -->
+
+    <group unless="$(arg sim)">
+        <!-- launch rviz -->
+	<include file="$(find industrial_robot_qt)/launch/start_rviz.launch" />
+
+        <group if="$(arg robot)">
+	    <!-- launch communication with the robot -->
+	    <node name="robot_communication" pkg="industrial_robot_qt" type="robot_communication" >
+	        <param name="port" value="$(arg robot_port)" />
+	    </node>
+	    <!-- launch odometry from encoder -->
+	    <node name="encoder_to_odom" pkg="industrial_robot_qt" type="encoder_to_odom" />
+
+            <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+	        <param name="default_topic" value="/cmd_vel"/>
+	    </node>
+
+	</group>
+
+        <group if="$(arg imu)">
+	    <!-- launch the IMU -->
+	    <include file="$(find rt_usb_9axisimu_driver)/launch/rt_usb_9axisimu_driver.launch" >
+	        <arg name="port" value="$(arg imu_port)" />
+	    </include>
+	    <!-- run complementary filter for the IMU -->
+	    <node name="complementary_filter_node" pkg="imu_complementary_filter" type="complementary_filter_node" />
+	</group>
+
+        <group if="$(arg lidar)">
+	    <!-- launch rp lidar -->
+	    <include file="$(find rplidar_ros)/launch/rplidar.launch" >
+	        <arg name="port" value="$(arg lidar_port)" />
+		<arg name="frame_id" value="$(arg lidar_frame_id)" />
+	    </include>
+	  <!--  <include file="$(find sweep_ros)/launch/sweep2scan.launch" /> -->
+	    <group if="$(arg slam)">
+	        <!-- run SLAM -->
+		<node name="slam_gmapping" pkg="gmapping" node="slam_gmapping" unless="$(arg amcl)" >
+		    <arg name="scan" value="/lidar/scan" />
+		</node>
+	    </group>
+
+            <group if="$(arg amcl)">
+	        <!-- run AMCL -->
+	    </group>
+	</group>
+
+        <group if="$(arg sonic)">
+	    <!-- launch arduino with the sonic sensors -->
+	</group>
+    </group>
+
+    <group if="$(arg sim)" >
+        <!-- launch the velocity model for the gazebo simulator -->
+	<include file="$(find industrial_robot_qt)/launch/wheel_velocity.launch" />
+
+	<!-- Launch Enocks offline trajectory
+    <node name="offline_trajectory_node" pkg="trajectory_generation" type="generate_trajectory" output="screen"/> -->
+
+	
+	<!-- <include file="$(find industrial_robot_qt)/launch/costmap_2d.launch" /> -->
+    </group>
+
+</launch>

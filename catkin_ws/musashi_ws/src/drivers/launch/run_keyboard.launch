@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="drivers" type="keyboard_cmd" name="keyboard_cmd" required="true" output="screen">
+    <rosparam command="load" file="$(find drivers)/config/keyboard.yaml" />
+  </node>
+</launch>

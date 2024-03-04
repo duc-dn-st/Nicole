@@ -1,0 +1,17 @@
+<launch>
+<!-- Load joint controller configuration from YAML file to parameter server -->
+<rosparam file="$(find industrial_robot_qt)/config/joint_states.yaml" command="load"/>
+<rosparam file="$(find industrial_robot_qt)/config/diff_drive.yaml" command="load"/>
+
+
+<!-- load the controllers -->
+<node name="robot_controller_spawner" pkg="controller_manager" type="spawner"
+  respawn="false" output="screen" ns="industrial_robot"
+   args="joint_state_controller
+         diff_drive_controller
+        --shutdown-timeout 3"/>
+
+<node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+  <param name="default_topic" value="industrial_robot/diff_drive_controller/cmd_vel"/>
+</node>
+</launch>

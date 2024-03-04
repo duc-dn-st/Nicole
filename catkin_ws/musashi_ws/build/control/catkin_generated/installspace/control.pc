@@ -1,0 +1,8 @@
+prefix=/home/musashi/catkin_ws/musashi_ws/install
+
+Name: control
+Description: Description of control
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: 

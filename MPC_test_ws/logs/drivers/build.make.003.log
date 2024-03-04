@@ -1,0 +1,8 @@
+[  8%] Built target run_rt_usb_9axisimu_driver
+[ 54%] Built target drivers
+[ 58%] Built target motor_libs
+[ 66%] Built target keyboard_cmd
+[ 79%] Built target test_steering_motor
+[ 83%] Built target test_driving_motor
+[ 91%] Built target test_encoder
+[100%] Built target encoder_to_velocity

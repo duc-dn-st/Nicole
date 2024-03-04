@@ -1,0 +1,13 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/libdrivers.so
+Symlinking /home/musashi/MPC_test_ws/devel/lib/libmotor_libs.so
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/drivers.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/test_steering_motor
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/test_encoder
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/cmake.lock
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/run_rt_usb_9axisimu_driver
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/test_driving_motor
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/encoder_to_velocity
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/keyboard_cmd
+Symlinking /home/musashi/MPC_test_ws/devel/lib/drivers/absolute_encoder_driver.py
+Symlinking /home/musashi/MPC_test_ws/devel/share/drivers/cmake/driversConfig.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/drivers/cmake/driversConfig-version.cmake

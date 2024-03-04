@@ -1,0 +1,8 @@
+prefix=/home/musashi/catkin_ws/musashi_ws/install
+
+Name: perception
+Description: Description of perception
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lperception
+Requires: roscpp rospy std_msgs

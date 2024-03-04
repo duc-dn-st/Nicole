@@ -1,0 +1,5 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/trajectory_generation.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/trajectory_generation/generate_trajectory
+Symlinking /home/musashi/MPC_test_ws/devel/lib/trajectory_generation/a_star_node
+Symlinking /home/musashi/MPC_test_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig-version.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig.cmake

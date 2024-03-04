@@ -1,0 +1,2 @@
+robot_sim_com:sim_localization
+-DCATKIN_DEVEL_PREFIX=/home/musashi/catkin_ws/sim_ws/devel -DCMAKE_INSTALL_PREFIX=/home/musashi/catkin_ws/sim_ws/install -G Unix Makefiles

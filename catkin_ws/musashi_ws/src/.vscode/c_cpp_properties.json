@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/musashi_03/musashi_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/musashi_03/musashi_ws/src/collision_avoidance/include/**",
+        "/home/musashi_03/musashi_ws/src/control/include/**",
+        "/home/musashi_03/musashi_ws/src/drivers/include/**",
+        "/home/musashi_03/musashi_ws/src/mapping/include/**",
+        "/home/musashi_03/musashi_ws/src/perception/include/**",
+        "/home/musashi_03/musashi_ws/src/robot_sim_exp/include/**",
+        "/home/musashi_03/musashi_ws/src/sdv_msgs/include/**",
+        "/home/musashi_03/musashi_ws/src/trajectory_generation/include/**",
+        "/home/musashi_03/musashi_ws/src/utilities/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

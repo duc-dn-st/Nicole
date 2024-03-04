@@ -1,0 +1,3 @@
+<launch>
+    <node name="odom_pub" pkg="localization" type="odom_musashi.py" output="screen" />
+</launch>

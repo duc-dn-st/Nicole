@@ -1,0 +1,7 @@
+<launch>
+  <arg name="port" default="/dev/ttyACM0" />
+  <node pkg="drivers" type="run_rt_usb_9axisimu_driver" name="run_rt_usb_9axisimu_driver" required="true">
+    <param name="port" value="$(arg port)" />
+  </node>
+  <node name="imu_filter_node" pkg="imu_filter_madgwick" type="imu_filter_node" output="screen" />
+</launch>

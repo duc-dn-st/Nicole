@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target slope_libs[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/slope_libs.dir/src/front_obstacle_detection.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/libslope_libs.so[0m
+[ 50%] Built target slope_libs
+[35m[1mScanning dependencies of target front_obstacle_detection_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/front_obstacle_detection_node.dir/src/front_obstacle_detection_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/perception/lib/perception/front_obstacle_detection_node[0m
+[100%] Built target front_obstacle_detection_node

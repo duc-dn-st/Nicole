@@ -1,0 +1,11 @@
+<launch>
+  <!-- run the general yaml file for the local and global costmaps with different namespaces -->
+  <node name="local_costmap_node" pkg="costmap_2d" type="costmap_2d_node" >
+    <rosparam file="$(find industrial_robot_qt)/config/costmap_general.yaml" command="load" ns="costmap" />
+    <rosparam file="$(find industrial_robot_qt)/config/costmap_local.yaml" command="load" />
+  </node>
+  <node name="global_costmap_node" pkg="costmap_2d" type="costmap_2d_node" >
+    <rosparam file="$(find industrial_robot_qt)/config/costmap_general.yaml" command="load" ns="costmap" />
+    <rosparam file="$(find industrial_robot_qt)/config/costmap_global.yaml" command="load" />
+  </node>
+</launch>

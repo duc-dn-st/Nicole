@@ -1,0 +1,21 @@
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/trajectory_generation.pc
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/generate_trajectory
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/a_star_node
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig-version.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig.cmake
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/pkgconfig/trajectory_generation.pc, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/trajectory_generation.pc)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/generate_trajectory, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/generate_trajectory)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/a_star_node, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/a_star_node)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/share/trajectory_generation/cmake/trajectory_generationConfig-version.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig-version.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/share/trajectory_generation/cmake/trajectory_generationConfig.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig.cmake)
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/pkgconfig/trajectory_generation.pc
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/generate_trajectory
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/trajectory_generation/a_star_node
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/trajectory_generation/cmake/trajectory_generationConfig.cmake
+Already unlinked: {}

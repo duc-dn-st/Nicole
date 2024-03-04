@@ -1,0 +1,41 @@
+## install ROS(noetic)
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt install curl # if you haven't already installed curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt update
+sudo apt install ros-noetic-desktop-full
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+sudo apt install python3-rosdep
+sudo rosdep init
+rosdep update
+
+
+
+## use ifconfig
+sudo apt install net-tools
+
+## install serial
+sudo apt-get install ros-noetic-serial
+sudo apt install libserial-dev
+
+## python error
+sudo apt install python-is-python3
+
+
+## useful tips
+rosdep install -i -y -r --from-paths src
+
+chmod +x PYTHON FILE
+
+## when launch/run file doesnt show up
+rospack profile
+
+!!!!!!!!!!!!!!!ADD folder "data" and "log" at the ws for logging access
+!!!!!!!!!!!!!!!logger.cpp needs to chg directory
+!!!!!!!!!!!!!!!scripts source directory needs to be changed, createmap.sh map save directory
+
+1. cartographer_ws install guide
+2. run bash install.sh to clone rplidar_ros etc
+3. run bash setup_port.sh to set rplidar USB

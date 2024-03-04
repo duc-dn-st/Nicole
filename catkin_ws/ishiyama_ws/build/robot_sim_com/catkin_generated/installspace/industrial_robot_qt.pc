@@ -1,0 +1,8 @@
+prefix=/home/musashi/catkin_ws/ishiyama_ws/install
+
+Name: industrial_robot_qt
+Description: Description of industrial_robot_qt
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

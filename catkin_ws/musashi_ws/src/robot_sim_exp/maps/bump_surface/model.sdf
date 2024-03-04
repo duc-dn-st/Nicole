@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <model name='bump_surface'>
+  <pose>3 -2 0  0 0 0</pose>
+  <static>true</static>
+  <link name="body">
+  <collision name="collision">
+    <geometry>
+      <mesh><uri>model://bump_surface/bump_surface.dae</uri></mesh>
+    </geometry>
+    <surface>
+      <friction>
+        <ode>
+          <mu>100</mu>
+          <mu2>50</mu2>
+        </ode>
+      </friction>
+    </surface>
+  </collision>
+    <visual name="visual">
+      <geometry>
+        <mesh><uri>model://bump_surface/bump_surface.dae</uri></mesh>
+      </geometry>
+    </visual>
+  </link>
+  </model>
+</sdf>

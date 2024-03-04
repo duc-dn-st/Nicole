@@ -1,0 +1,8 @@
+prefix=/home/musashi/catkin_ws/musashi_ws/install
+
+Name: collision_avoidance
+Description: Description of collision_avoidance
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcollision_avoidance
+Requires: roscpp utilities

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target sdv_main[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/sdv_main.dir/src/sdv_main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/musashi/MPC_test_ws/devel/.private/robot_sim_exp/lib/robot_sim_exp/sdv_main[0m
+[100%] Built target sdv_main

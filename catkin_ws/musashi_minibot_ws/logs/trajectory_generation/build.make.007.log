@@ -1,0 +1,8 @@
+[35m[1mScanning dependencies of target trajectory_lib[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/trajectory_lib.dir/src/global_trajectory.cpp.o[0m
+[ 28%] [32m[1mLinking CXX shared library libtrajectory_lib.so[0m
+[ 42%] Built target trajectory_lib
+[ 71%] [32m[1mLinking CXX executable /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/a_star_node[0m
+[ 71%] [32m[1mLinking CXX executable /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/generate_trajectory[0m
+[ 85%] Built target a_star_node
+[100%] Built target generate_trajectory

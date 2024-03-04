@@ -1,0 +1,11 @@
+<launch>
+    <remap from="/scan" to="/velodyne_scan_back" />
+    <remap from="/velodyne_points" to="/velodyne_points_back" />
+    <remap from="/velodyne_packets" to="/velodyne_packets_back" />
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch">
+        <arg name="frame_id" value="velodyne_back" />
+        <arg name="port" value="2369" />
+        <arg name="rpm" value="1200" />
+        <arg name="device_ip" value="192.168.20.150" />
+    </include>
+</launch>

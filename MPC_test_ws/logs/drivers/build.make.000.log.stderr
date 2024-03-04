@@ -1,0 +1,13 @@
+In file included from [01m[K/home/musashi/MPC_test_ws/src/drivers/src/rt_usb_9axisimu_driver.cpp:32[m[K:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/include/drivers/rt_usb_9axisimu.hpp:[m[K In member function ‘[01m[Kint RtUsbImu::SerialPort::readAscii(std::vector<double>&, unsigned int)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/include/drivers/rt_usb_9axisimu.hpp:288:7:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  288 |       [01;35m[K}[m[K
+      |       [01;35m[K^[m[K
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::sendMotorCommands(double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\:'
+  147 |     std::cout << [01;35m[K"Driving directions\:\t ["[m[K<<data[1] << ", "<<data[3] << ", "<<data[5] << ", "<<data[7] << "]" <<std::endl;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:[m[K In member function ‘[01m[Kvoid MotorDriver::sendMotorCommands(double, double, double, double, double, double, double, double)[m[K’:
+[01m[K/home/musashi/MPC_test_ws/src/drivers/src/motor_driver.cpp:147:18:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\:'
+  147 |     std::cout << [01;35m[K"Driving directions\:\t ["[m[K<<data[1] << ", "<<data[3] << ", "<<data[5] << ", "<<data[7] << "]" <<std::endl;
+      |                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

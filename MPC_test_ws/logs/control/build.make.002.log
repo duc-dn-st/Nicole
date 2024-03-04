@@ -1,0 +1,5 @@
+[  7%] Built target control_gencfg
+[ 23%] Built target low_level_controller
+[ 69%] Built target control_libs
+[ 84%] Built target controller_node_test
+[100%] Built target controller_node

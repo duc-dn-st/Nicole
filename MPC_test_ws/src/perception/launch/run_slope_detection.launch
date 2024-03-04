@@ -1,0 +1,3 @@
+<launch>
+  <node name="slope_bump_detection_node" pkg="perception" type="slope_bump_detection_node" />
+</launch>

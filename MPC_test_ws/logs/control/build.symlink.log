@@ -1,0 +1,57 @@
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/libcontrol_libs.so
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/pkgconfig/control.pc
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/control/controller_node_test
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/control/low_level_controller
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/control/controller_node
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/python3/dist-packages/control/__init__.py
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/ControlGainsConfig.py
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/__init__.py
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/include/control/ControlGainsConfig.h
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/control/cmake/controlConfig.cmake
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/control/cmake/controlConfig-version.cmake
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.wikidoc
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.dox
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/control/docs/ControlGainsConfig-usage.dox
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/cmake.lock, /home/musashi/MPC_test_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/libcontrol_libs.so, /home/musashi/MPC_test_ws/devel/lib/libcontrol_libs.so)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/pkgconfig/control.pc, /home/musashi/MPC_test_ws/devel/lib/pkgconfig/control.pc)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/control/controller_node_test, /home/musashi/MPC_test_ws/devel/lib/control/controller_node_test)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/control/low_level_controller, /home/musashi/MPC_test_ws/devel/lib/control/low_level_controller)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/control/controller_node, /home/musashi/MPC_test_ws/devel/lib/control/controller_node)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/python3/dist-packages/control/__init__.py, /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/__init__.py)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/python3/dist-packages/control/cfg/ControlGainsConfig.py, /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/ControlGainsConfig.py)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/lib/python3/dist-packages/control/cfg/__init__.py, /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/__init__.py)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/include/control/ControlGainsConfig.h, /home/musashi/MPC_test_ws/devel/include/control/ControlGainsConfig.h)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/share/control/cmake/controlConfig.cmake, /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig.cmake)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/share/control/cmake/controlConfig-version.cmake, /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig-version.cmake)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/share/control/docs/ControlGainsConfig.wikidoc, /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.wikidoc)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/share/control/docs/ControlGainsConfig.dox, /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.dox)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/control/share/control/docs/ControlGainsConfig-usage.dox, /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig-usage.dox)
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/libcontrol_libs.so
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/pkgconfig/control.pc
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/control/controller_node_test
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/control/low_level_controller
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/control/controller_node
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/__init__.py
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/ControlGainsConfig.py
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/__init__.py
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/include/control/ControlGainsConfig.h
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.wikidoc
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.dox
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig-usage.dox
+Already unlinked: {}

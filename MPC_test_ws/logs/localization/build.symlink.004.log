@@ -1,0 +1,17 @@
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/pkgconfig/localization.pc
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/lib/localization/kinematics
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/localization/cmake/localizationConfig-version.cmake
+Symlinking /home/musashi/Work/Nicole/MPC_test_ws/devel/share/localization/cmake/localizationConfig.cmake
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/localization/cmake.lock, /home/musashi/MPC_test_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/localization/lib/pkgconfig/localization.pc, /home/musashi/MPC_test_ws/devel/lib/pkgconfig/localization.pc)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/localization/lib/localization/kinematics, /home/musashi/MPC_test_ws/devel/lib/localization/kinematics)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/localization/share/localization/cmake/localizationConfig-version.cmake, /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig-version.cmake)
+Cleaning: (/home/musashi/MPC_test_ws/devel/.private/localization/share/localization/cmake/localizationConfig.cmake, /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig.cmake)
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/pkgconfig/localization.pc
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/lib/localization/kinematics
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/MPC_test_ws/devel/share/localization/cmake/localizationConfig.cmake
+Already unlinked: {}

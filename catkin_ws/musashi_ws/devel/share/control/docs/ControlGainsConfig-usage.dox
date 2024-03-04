@@ -1,0 +1,22 @@
+\subsubsection usage Usage
+\verbatim
+<node name="low_level_control" pkg="control" type="low_level_control">
+  <param name="vel_fl_k_p" type="double" value="0.1" />
+  <param name="vel_fr_k_p" type="double" value="0.1" />
+  <param name="vel_bl_k_p" type="double" value="0.1" />
+  <param name="vel_br_k_p" type="double" value="0.1" />
+  <param name="vel_fl_k_i" type="double" value="0.01" />
+  <param name="vel_fr_k_i" type="double" value="0.01" />
+  <param name="vel_bl_k_i" type="double" value="0.01" />
+  <param name="vel_br_k_i" type="double" value="0.01" />
+  <param name="steer_fl_k_p" type="double" value="10.0" />
+  <param name="steer_fr_k_p" type="double" value="10.0" />
+  <param name="steer_bl_k_p" type="double" value="10.0" />
+  <param name="steer_br_k_p" type="double" value="10.0" />
+  <param name="steer_fl_k_i" type="double" value="0.1" />
+  <param name="steer_fr_k_i" type="double" value="0.1" />
+  <param name="steer_bl_k_i" type="double" value="0.1" />
+  <param name="steer_br_k_i" type="double" value="0.1" />
+</node>
+\endverbatim
+

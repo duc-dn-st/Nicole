@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/musashi/catkin_ws/musashi_minibot_ws/src/utilities/include/utilities/utilities.h
+boost/math/constants/constants.hpp
+-
+eigen3/Eigen/Core
+-
+cmath
+-
+iostream
+-
+
+/home/musashi/catkin_ws/musashi_minibot_ws/src/utilities/src/utilities.cpp
+../include/utilities/utilities.h
+/home/musashi/catkin_ws/musashi_minibot_ws/src/utilities/include/utilities/utilities.h
+

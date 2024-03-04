@@ -1,0 +1,3 @@
+[ 42%] Built target trajectory_lib
+[ 71%] Built target generate_trajectory
+[100%] Built target a_star_node

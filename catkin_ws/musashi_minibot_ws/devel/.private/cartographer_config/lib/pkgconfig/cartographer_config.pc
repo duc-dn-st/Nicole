@@ -1,0 +1,8 @@
+prefix=/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/cartographer_config
+
+Name: cartographer_config
+Description: Description of cartographer_config
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

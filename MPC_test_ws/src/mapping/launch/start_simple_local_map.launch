@@ -1,0 +1,3 @@
+<launch>
+  <node name="pc_to_local_map_no_inflation_node" pkg="mapping" type="pc_to_local_map_no_inflation_node" />
+</launch>

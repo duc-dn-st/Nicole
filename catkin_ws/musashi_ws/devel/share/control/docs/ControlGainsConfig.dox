@@ -1,0 +1,21 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~vel_fl_k_p" : \b [double] Proportional gain of the front left driving wheel. min: 0.0, default: 0.1, max: 100.0
+- \b "~vel_fr_k_p" : \b [double] Proportional gain of the front right driving wheel. min: 0.0, default: 0.1, max: 100.0
+- \b "~vel_bl_k_p" : \b [double] Proportional gain of the back left driving wheel. min: 0.0, default: 0.1, max: 100.0
+- \b "~vel_br_k_p" : \b [double] Proportional gain of the back right driving wheel. min: 0.0, default: 0.1, max: 100.0
+- \b "~vel_fl_k_i" : \b [double] Integral gain of the front left driving wheel. min: 0.0, default: 0.01, max: 10.0
+- \b "~vel_fr_k_i" : \b [double] Integral gain of the front right driving wheel. min: 0.0, default: 0.01, max: 10.0
+- \b "~vel_bl_k_i" : \b [double] Integral gain of the back left driving wheel. min: 0.0, default: 0.01, max: 10.0
+- \b "~vel_br_k_i" : \b [double] Integral gain of the back right driving wheel. min: 0.0, default: 0.01, max: 10.0
+- \b "~steer_fl_k_p" : \b [double] Proportional gain of the front left steering wheel. min: 0.0, default: 10.0, max: 100.0
+- \b "~steer_fr_k_p" : \b [double] Proportional gain of the front right steering wheel. min: 0.0, default: 10.0, max: 100.0
+- \b "~steer_bl_k_p" : \b [double] Proportional gain of the back left steering wheel. min: 0.0, default: 10.0, max: 100.0
+- \b "~steer_br_k_p" : \b [double] Proportional gain of the back right steering wheel. min: 0.0, default: 10.0, max: 100.0
+- \b "~steer_fl_k_i" : \b [double] Integral gain of the front left steering wheel. min: 0.0, default: 0.1, max: 10.0
+- \b "~steer_fr_k_i" : \b [double] Integral gain of the front right steering wheel. min: 0.0, default: 0.1, max: 10.0
+- \b "~steer_bl_k_i" : \b [double] Integral gain of the back left steering wheel. min: 0.0, default: 0.1, max: 10.0
+- \b "~steer_br_k_i" : \b [double] Integral gain of the back right steering wheel. min: 0.0, default: 0.1, max: 10.0
+

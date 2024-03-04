@@ -1,0 +1,93 @@
+<launch>
+
+    <arg name="lidar" default="false" />
+    <arg name="ackerman" default="true" />
+    <arg name="no_encoder" default="false" />
+    <arg name="use_imu" default="false" />
+    <arg name="model" default="$(find robot_sim_exp)/urdf/musashi_robot.urdf.xacro"/>
+    <arg name="rvizconfig" default="$(find robot_sim_exp)/rviz/self_made.rviz"/>
+
+    <param name="no_encoder" value="$(arg no_encoder)" />
+    <param name="is_ackerman" value="$(arg ackerman)" />
+    <param name="simulation" value="false" />
+    <param name="use_lidar" value="$(arg lidar)" />
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+
+    <!-- Starting joint state publisher node which will publish the joint values -->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+        <rosparam param="source_list">["raw_vel"]</rosparam>
+    </node>
+
+    <!-- convert joint states to TF transforms for rviz, etc -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+      respawn="false" output="screen">
+      <remap from="raw_vel" to="musashi_robot/joint_states" />
+    </node>
+
+    <!-- run and setup rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+
+    <!-- run a fake odometry
+    <node name="odom" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 odom base_link 10" />
+    -->
+
+    <!-- Localization from Encoder -->
+    <include file="$(find localization)/launch/start_encoder_odom.launch" />
+
+    <group if="$(arg use_imu)" >
+        <!-- run the imu sensor -->
+        <include file="$(find drivers)/launch/run_imu.launch" />
+
+        <!-- run complementary filter for IMU -->
+        <node name="imu_filter_node" pkg="imu_filter_madgwick" type="imu_filter_node" output="screen" />
+
+    </group>
+
+    <!-- run Kalman Filter (EKF or UKF) -->
+    <include file="$(find localization)/launch/start_sensor_fusion.launch"/>
+
+    <group if="$(arg lidar)" >
+        <!-- run lidar sensors -->
+        <include file="$(find drivers)/launch/start_velodyne_sensors.launch" />
+
+        <!-- run the local map node -->
+        <include file="$(find mapping)/launch/start_inflated_local_map.launch" />
+
+        <!-- run VFH -->
+        <node name="obstacle_avoidance" pkg="collision_avoidance" type="obstacle_avoidance" />
+
+        <!-- run slope detection algorithm -->
+    </group>
+
+    <!-- run the task manager
+    <node name="sdv_main" pkg="robot_sim_exp" type="sdv_main" />  -->
+
+    <!-- run controller
+    <node name="controller_node" pkg="control" type="controller_node" />-->
+
+    <!-- generate a static transform between map and odom for the static map (temporary) -->
+    <node name="odom_to_map" pkg="tf" type="static_transform_publisher"
+        args="110.0 52.5 0.0 0.0 0.0 0.0 /map /odom 100" />
+
+        <!--args="129.0 77.0 0.0 0.0 0.0 0.0 /map /odom 100" />-->
+
+        <!--args="2.0 10.0 0.0 0.0 0.0 0.0 /map /odom 100" />-->
+
+    <!-- run static map -->
+    <node name="map_server" pkg="map_server" type="map_server"
+        args="$(find mapping)/maps/schoolyardV2.yaml" />
+
+    <!-- run inflation for static map -->
+    <node name="inflate_static_map_node" pkg="mapping" type="inflate_static_map_node" />
+
+    <!-- run A* -->
+    <node name="path_planner" pkg="trajectory_generation" type="a_star_node" output="screen" />
+
+    <!-- Launch Enocks offline trajectory -->
+    <node name="offline_trajectory_node" pkg="trajectory_generation" type="generate_trajectory" />
+
+    <!-- Launch Low Level Controller -->
+    <node name="low_level_controller" pkg="control" type="low_level_controller" />
+
+
+</launch>

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,librobotdata.so -o /home/musashi/catkin_ws/nitrabot_ws/devel/lib/librobotdata.so CMakeFiles/robotdata.dir/src/robotdata.cpp.o 

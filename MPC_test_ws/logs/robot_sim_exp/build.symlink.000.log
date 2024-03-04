@@ -1,0 +1,4 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/robot_sim_exp.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/robot_sim_exp/sdv_main
+Symlinking /home/musashi/MPC_test_ws/devel/share/robot_sim_exp/cmake/robot_sim_expConfig.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/robot_sim_exp/cmake/robot_sim_expConfig-version.cmake

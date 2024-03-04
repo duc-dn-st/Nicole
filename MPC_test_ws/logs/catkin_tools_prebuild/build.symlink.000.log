@@ -1,0 +1,12 @@
+Symlinking /home/musashi/MPC_test_ws/devel/./_setup_util.py
+Symlinking /home/musashi/MPC_test_ws/devel/./local_setup.zsh
+Symlinking /home/musashi/MPC_test_ws/devel/./env.sh
+Symlinking /home/musashi/MPC_test_ws/devel/./setup.sh
+Symlinking /home/musashi/MPC_test_ws/devel/./local_setup.sh
+Symlinking /home/musashi/MPC_test_ws/devel/./cmake.lock
+Symlinking /home/musashi/MPC_test_ws/devel/./local_setup.bash
+Symlinking /home/musashi/MPC_test_ws/devel/./setup.bash
+Symlinking /home/musashi/MPC_test_ws/devel/./setup.zsh
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/catkin_tools_prebuild.pc
+Symlinking /home/musashi/MPC_test_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake

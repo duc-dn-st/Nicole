@@ -1,0 +1,1 @@
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/logger/share/logger/cmake/loggerConfig-version.cmake

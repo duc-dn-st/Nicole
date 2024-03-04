@@ -1,0 +1,8 @@
+<launch>
+    <!-- run front velo sensor -->
+    <include file="$(find drivers)/launch/run_front_velo.launch" />
+
+    <!-- run rear velo sensor -->
+    <include file="$(find drivers)/launch/run_back_velo.launch" />
+
+</launch>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://slope_incline</uri>
+      <name>slope_5deg_incline</name>
+      <pose>1 4 0  1.5708 0 0</pose>
+    </include>
+  </world>
+</sdf>

@@ -1,0 +1,17 @@
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/test/feed_forward
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/test/__init__.py
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/test/cmake/test-msg-paths.cmake
+Symlinking /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/test/manifest.l
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/test/cmake.lock, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/./cmake.lock)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/test/lib/test/feed_forward, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/test/feed_forward)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/test/lib/python3/dist-packages/test/__init__.py, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/test/__init__.py)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/test/share/test/cmake/test-msg-paths.cmake, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/test/cmake/test-msg-paths.cmake)
+Cleaning: (/home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/test/share/roseus/ros/test/manifest.l, /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/test/manifest.l)
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/test/feed_forward
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/lib/python3/dist-packages/test/__init__.py
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/test/cmake/test-msg-paths.cmake
+Already unlinked: {}
+Unlinking: /home/musashi/Work/Nicole/catkin_ws/musashi_minibot_ws/devel/share/roseus/ros/test/manifest.l
+Already unlinked: {}

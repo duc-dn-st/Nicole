@@ -1,0 +1,14 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/libcontrol_libs.so
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/control.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/control/controller_node_test
+Symlinking /home/musashi/MPC_test_ws/devel/lib/control/low_level_controller
+Symlinking /home/musashi/MPC_test_ws/devel/lib/control/controller_node
+Symlinking /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/__init__.py
+Symlinking /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/ControlGainsConfig.py
+Symlinking /home/musashi/MPC_test_ws/devel/lib/python3/dist-packages/control/cfg/__init__.py
+Symlinking /home/musashi/MPC_test_ws/devel/include/control/ControlGainsConfig.h
+Symlinking /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/control/cmake/controlConfig-version.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.wikidoc
+Symlinking /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig.dox
+Symlinking /home/musashi/MPC_test_ws/devel/share/control/docs/ControlGainsConfig-usage.dox

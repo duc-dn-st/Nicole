@@ -1,0 +1,34 @@
+<launch>
+
+  <arg name="model" default="$(find industrial_robot_qt)/urdf/industrial_robot.urdf.xacro"/>
+  <arg name="rvizconfig" default="$(find industrial_robot_qt)/rviz/urdf.rviz"/>
+  <arg name="world_name" default="worlds/empty.world"/>
+
+  <!-- Launch gazebo -->
+  <include file="$(find industrial_robot_qt)/launch/gazebo.launch">
+    <arg name="model" value="$(arg model)"/>
+    <arg name="world_name" value="$(arg world_name)"/>
+   </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+
+  <!-- Load joint controller configuration from YAML file to parameter server -->
+  <rosparam file="$(find industrial_robot_qt)/config/joint_states.yaml" command="load"/>
+  <rosparam file="$(find industrial_robot_qt)/config/diff_drive.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="robot_controller_spawner" pkg="controller_manager" type="spawner"
+    respawn="false" output="screen" ns="industrial_robot"
+     args="joint_state_controller
+           diff_drive_controller"/>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+      respawn="false" output="screen">
+  </node>
+
+  <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
+    <param name="default_topic" value="industrial_robot/diff_drive_controller/cmd_vel"/>
+  </node>
+
+</launch>

@@ -1,0 +1,91 @@
+<launch>
+
+    <arg name="map" default="demo_map" />
+    <arg name="lidar" default="true" />
+    <arg name="ackerman" default="true" />
+    <arg name="no_encoder" default="false" />
+    <arg name="rvizconfig" default="$(find robot_sim_exp)/rviz/self_made.rviz"/>
+    <arg name="world_name" default="$(find robot_sim_exp)/maps/$(arg map)/$(arg map).world"/>
+
+    <param name="no_encoder" value="$(arg no_encoder)" />
+    <param name="is_ackerman" value="$(arg ackerman)" />
+    <param name="use_lidar" value="$(arg lidar)" />
+    <param name="simulation" value="true" />
+
+    <group unless="$(arg lidar)">
+    
+        <!-- Launch gazebo -->
+        <include file="$(find robot_sim_exp)/launch/gazebo.launch">
+            <arg name="model" value="$(find robot_sim_exp)/urdf/musashi_robot_no_lidar.urdf.xacro"/>
+            <!-- <arg name="world_name" value="$(arg world_name)"/> -->
+        </include>
+
+    </group>
+
+    <group if="$(arg lidar)">
+
+        <!-- Launch gazebo -->
+        <include file="$(find robot_sim_exp)/launch/gazebo.launch">
+            <arg name="model" value="$(find robot_sim_exp)/urdf/musashi_robot.urdf.xacro"/>
+            <!-- <arg name="world_name" value="$(arg world_name)"/> -->
+        </include>
+
+    </group>
+
+    <!-- run the motor control launch file -->
+    <include file="$(find robot_sim_exp)/launch/motor_control.launch" />
+
+    <!-- Launch Odometry from Gazebo (carefull currently two packages
+    with same name one in musashi_ws one in catkin_qt_ws
+    <include file="$(find localization)/launch/start_odom.launch" /> -->
+
+    <!-- run localization from encoder -->
+    <node name="kinematics" pkg="localization" type="kinematics" >
+    </node>
+
+    <!-- run Kalman Filter (EKF or UKF) -->
+    <include file="$(find localization)/launch/start_sensor_fusion.launch"/>
+
+    <!-- Starting robot state publish which will publish tf
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" /> -->
+
+    <!-- run and setup rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)"/>
+
+    <group if="$(arg lidar)">
+        <!-- run the local map node -->
+        <include file="$(find mapping)/launch/start_inflated_local_map.launch" />
+
+        <!-- run VFH -->
+        <node name="obstacle_avoidance" pkg="collision_avoidance" type="obstacle_avoidance" />
+    </group>
+
+    <!-- Launch Enocks offline trajectory -->
+    <node name="offline_trajectory_node" pkg="trajectory_generation" type="generate_trajectory" output="screen"/>
+
+    <!-- launch the slope bump detection algorithm 
+    <include file="$(find perception)/launch/run_slope_detection.launch" /> -->
+
+    <!-- run the task manager
+    <node name="sdv_main" pkg="robot_sim_exp" type="sdv_main" /> -->
+
+    <!-- generate a static transform between map and odom for the static map (temporary) -->
+    <node name="odom_to_map" pkg="tf" type="static_transform_publisher"
+        args="84.0 52.5 0.0 0.0 0.0 0.0 /map /odom 100" />
+
+
+        <!--args="2.0 10.0 0.0 0.0 0.0 0.0 /map /odom 100" />-->
+
+
+    <!-- run static map -->
+    <node name="map_server" pkg="map_server" type="map_server"
+        args="$(find mapping)/maps/schoolyardV2.yaml" />
+
+    <!-- run inflation for static map -->
+    <node name="inflate_static_map_node" pkg="mapping" type="inflate_static_map_node" />
+
+    <!-- run A* -->
+    <node name="path_planner" pkg="trajectory_generation" type="a_star_node" output="screen" />
+
+
+</launch>

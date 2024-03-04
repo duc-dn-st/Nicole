@@ -1,0 +1,2 @@
+cartographer_config:logger:nitrabot:perception:rplidar_ros:sdv_msgs:test:trajectory_generation:utilities
+-DCATKIN_DEVEL_PREFIX=/home/musashi/catkin_ws/musashi_minibot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/musashi/catkin_ws/musashi_minibot_ws/install -G Unix Makefiles

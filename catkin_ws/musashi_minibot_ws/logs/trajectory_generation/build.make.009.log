@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target trajectory_lib[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/trajectory_lib.dir/src/global_trajectory.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/trajectory_lib.dir/src/a_star.cpp.o[0m
+[01m[K/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/src/trajectory_generation/src/a_star.cpp:[m[K In member function ‘[01m[Kunsigned int Astar::getOrientationIdx(double)[m[K’:
+[01m[K/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/src/trajectory_generation/src/a_star.cpp:613:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+  613 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 42%] [32m[1mLinking CXX shared library libtrajectory_lib.so[0m
+[ 42%] Built target trajectory_lib
+[35m[1mScanning dependencies of target generate_trajectory[0m
+[35m[1mScanning dependencies of target a_star_node[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/generate_trajectory.dir/src/generate_trajectory.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/a_star_node.dir/src/a_star_node.cpp.o[0m
+[ 85%] [32m[1mLinking CXX executable /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/generate_trajectory[0m
+[ 85%] Built target generate_trajectory
+[100%] [32m[1mLinking CXX executable /home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/trajectory_generation/lib/trajectory_generation/a_star_node[0m
+[100%] Built target a_star_node

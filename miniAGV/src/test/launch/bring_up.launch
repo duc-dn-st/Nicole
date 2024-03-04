@@ -1,0 +1,22 @@
+<launch>
+  <arg name="lidar2d" default="true" />
+
+  <!-- Start LiDAR-->
+      <group if="$(arg lidar2d)">
+        <include file="$(find rplidar_ros)/launch/rplidar.launch">
+            <arg name="serial_port" value="/dev/ttyUSB0"/>
+            <arg name="frame_id" value="laser"/>      
+        </include>
+        
+        <!-- <node pkg="laser_filters" type="scan_to_scan_filter_chain"
+        name="laser_filter">
+        <rosparam command="load" file="my_laser_config.yaml" />
+        </node> -->
+      </group>
+  
+  <node pkg="tf" type="static_transform_publisher" name="lidar_to_base_link" args="0.155 0.190 0.935 0 0 0-3.14 base_link laser 100" />
+
+
+  <!-- Robot communication -->
+  <!--<node name="robot_communication" pkg="test" type="robot_com.py" output="screen"/>-->
+</launch>

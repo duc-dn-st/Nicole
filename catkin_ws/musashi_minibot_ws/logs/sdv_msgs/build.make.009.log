@@ -1,0 +1,46 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target _sdv_msgs_generate_messages_check_deps_TrajectoryFlags[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target _sdv_msgs_generate_messages_check_deps_TrajectoryPoint[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target _sdv_msgs_generate_messages_check_deps_Trajectory[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _sdv_msgs_generate_messages_check_deps_Trajectory
+[  0%] Built target _sdv_msgs_generate_messages_check_deps_TrajectoryFlags
+[  0%] Built target _sdv_msgs_generate_messages_check_deps_TrajectoryPoint
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages_lisp[0m
+[  5%] [34m[1mGenerating Lisp code from sdv_msgs/Trajectory.msg[0m
+[ 11%] [34m[1mGenerating Lisp code from sdv_msgs/TrajectoryPoint.msg[0m
+[ 16%] [34m[1mGenerating Lisp code from sdv_msgs/TrajectoryFlags.srv[0m
+[ 16%] Built target sdv_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages_eus[0m
+[ 22%] [34m[1mGenerating EusLisp code from sdv_msgs/Trajectory.msg[0m
+[ 27%] [34m[1mGenerating EusLisp code from sdv_msgs/TrajectoryPoint.msg[0m
+[ 33%] [34m[1mGenerating EusLisp code from sdv_msgs/TrajectoryFlags.srv[0m
+[ 38%] [34m[1mGenerating EusLisp manifest code for sdv_msgs[0m
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages_cpp[0m
+[ 44%] [34m[1mGenerating C++ code from sdv_msgs/Trajectory.msg[0m
+[ 55%] [34m[1mGenerating C++ code from sdv_msgs/TrajectoryPoint.msg[0m
+[ 55%] [34m[1mGenerating C++ code from sdv_msgs/TrajectoryFlags.srv[0m
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages_py[0m
+[ 61%] [34m[1mGenerating Javascript code from sdv_msgs/Trajectory.msg[0m
+[ 72%] [34m[1mGenerating Python from MSG sdv_msgs/Trajectory[0m
+[ 72%] [34m[1mGenerating Javascript code from sdv_msgs/TrajectoryPoint.msg[0m
+[ 77%] [34m[1mGenerating Javascript code from sdv_msgs/TrajectoryFlags.srv[0m
+[ 77%] Built target sdv_msgs_generate_messages_cpp
+[ 83%] [34m[1mGenerating Python code from SRV sdv_msgs/TrajectoryFlags[0m
+[ 83%] Built target sdv_msgs_generate_messages_nodejs
+[ 88%] [34m[1mGenerating Python from MSG sdv_msgs/TrajectoryPoint[0m
+[ 94%] [34m[1mGenerating Python srv __init__.py for sdv_msgs[0m
+[100%] [34m[1mGenerating Python msg __init__.py for sdv_msgs[0m
+[100%] Built target sdv_msgs_generate_messages_eus
+[100%] Built target sdv_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sdv_msgs_generate_messages[0m
+[100%] Built target sdv_msgs_generate_messages

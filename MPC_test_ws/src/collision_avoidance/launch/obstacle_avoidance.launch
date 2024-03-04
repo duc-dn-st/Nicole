@@ -1,0 +1,18 @@
+<launch>
+
+    <arg name="simulation" default="true" />
+
+    <group unless="$(arg simulation)">
+        <rosparam file="$(find collision_avoidance)/config/vfh_experiment_params.yaml" command="load"/>
+    </group>
+
+    <group if="$(arg simulation)">
+        <rosparam file="$(find collision_avoidance)/config/vfh_simulation_params.yaml" command="load"/>
+    </group>
+
+    <!-- Launch the obstacle avoidance -->
+    <node name="obstacle_avoidance" pkg="collision_avoidance" type="obstacle_avoidance"
+    output="screen" >
+    </node>
+
+</launch>

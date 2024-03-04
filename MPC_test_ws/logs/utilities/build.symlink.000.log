@@ -1,0 +1,5 @@
+Symlinking /home/musashi/MPC_test_ws/devel/lib/libutilities.so
+Symlinking /home/musashi/MPC_test_ws/devel/lib/pkgconfig/utilities.pc
+Symlinking /home/musashi/MPC_test_ws/devel/lib/utilities/simple_logger
+Symlinking /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig-version.cmake
+Symlinking /home/musashi/MPC_test_ws/devel/share/utilities/cmake/utilitiesConfig.cmake

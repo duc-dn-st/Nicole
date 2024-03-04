@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/musashi/catkin_ws/musashi_ws/devel/setup.sh

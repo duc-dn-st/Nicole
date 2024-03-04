@@ -1,0 +1,1 @@
+/home/musashi/work/Nicole/catkin_ws/musashi_minibot_ws/devel/.private/nitra_robot/share/roseus/ros/nitra_robot/manifest.l

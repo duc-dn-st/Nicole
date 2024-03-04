@@ -1,0 +1,7 @@
+<launch>
+    <!-- launch the velocity model for the gazebo simulator -->
+	<include file="$(find industrial_robot_qt)/launch/wheel_velocity.launch" />
+
+	<!-- Launch Enocks offline trajectory -->
+    <node name="offline_trajectory_node" pkg="trajectory_generation" type="generate_trajectory" output="screen"/>
+</launch>

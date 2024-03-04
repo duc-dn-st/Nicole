@@ -1,0 +1,2 @@
+cartographer_config:logger:nitrabot:robot_sim_com:rplidar_ros:sdv_msgs:sim_localization:trajectory_generation:utilities
+-DCATKIN_DEVEL_PREFIX=/home/musashi/catkin_ws/nitrabot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/musashi/catkin_ws/nitrabot_ws/install -G Unix Makefiles
